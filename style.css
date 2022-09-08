@@ -1,0 +1,157 @@
+body{
+    background: #fceba6; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.logo{
+    margin: 2em;
+}
+
+.text-logo{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2em;
+    color: #43254a;
+}
+
+.texto-logo p{
+    font-size: large;
+}
+
+.texto-logo h1{
+    font-size: larger;
+    font-weight: bold;
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+}
+
+#iniciar-juego{
+    width: 30%;
+    font-size: large;
+    text-align: center;
+    padding: 2% 0;
+    border-radius: 15px;
+    margin-top: 14%;
+    margin-bottom: 2%;
+    color: #43254a;
+    background: #aa98aa;
+    border: #43254a solid;
+    transition: background color border cursor;
+}
+
+#iniciar-juego:hover{
+    background: #43254a;
+    color: #fceba6;
+    cursor: pointer;
+}
+
+#iniciar-juego:active{
+    background: #231427;
+    border: #231427 solid;
+}
+
+#agregar-palabra{
+    width: 20%;
+    font-size: medium;
+    padding: 2% 0;
+    border-radius: 15px;
+    margin-bottom: 12%;
+    color: #43254a;
+    background: #fceba6;
+    border: #f7b054 solid;
+    transition: background border cursor;
+}
+
+#agregar-palabra:hover{
+    background: #f7b054;
+    cursor: pointer;
+}
+
+#agregar-palabra:active{
+    background: #ff9100;
+    border: #ff9100 solid;
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+}
+
+footer p{
+    font-size: small;
+    font-weight: bold;
+    color: #f7b054;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+/*agregar aquí css de new-game*/
+
+/*style de new-word*/
+input{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    padding: 15% 0;
+    background: #fceba6;
+    border: none;
+    color: #f7b054;
+    font-size: large;
+    outline: none;
+}
+
+#guardar-palabra{
+    width: 20%;
+    font-size: medium;
+    text-align: center;
+    padding: 1% 0;
+    border-radius: 15px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #43254a;
+    background: #aa98aa;
+    border: #43254a solid;
+    transition: background color border cursor;
+}
+
+#guardar-palabra:hover{
+    background: #43254a;
+    color: #fceba6;
+    cursor: pointer;
+}
+
+#guardar-palabra:active{
+    background: #231427;
+    border: #231427 solid;
+}
+
+#cancelar{
+    width: 20%;
+    font-size: medium;
+    padding: 1% 0;
+    border-radius: 15px;
+    margin-bottom: 2%;
+    color: #43254a;
+    background: #fceba6;
+    border: #f7b054 solid;
+    transition: background border cursor;
+}
+
+#cancelar:hover{
+    background: #f7b054;
+    cursor: pointer;
+}
+
+#cancelar:active{
+    background: #ff9100;
+    border: #ff9100 solid;
+}
