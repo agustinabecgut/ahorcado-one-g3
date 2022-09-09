@@ -33,7 +33,7 @@ button{
     margin: 0 auto;
 }
 
-#iniciar-juego{
+.iniciar-juego{
     width: 30%;
     font-size: large;
     text-align: center;
@@ -47,18 +47,18 @@ button{
     transition: background color border cursor;
 }
 
-#iniciar-juego:hover{
+.iniciar-juego:hover{
     background: #43254a;
     color: #fceba6;
     cursor: pointer;
 }
 
-#iniciar-juego:active{
+.iniciar-juego:active{
     background: #231427;
     border: #231427 solid;
 }
 
-#agregar-palabra{
+.agregar-palabra{
     width: 20%;
     font-size: medium;
     padding: 2% 0;
@@ -70,20 +70,22 @@ button{
     transition: background border cursor;
 }
 
-#agregar-palabra:hover{
+.agregar-palabra:hover{
     background: #f7b054;
     cursor: pointer;
 }
 
-#agregar-palabra:active{
+.agregar-palabra:active{
     background: #ff9100;
     border: #ff9100 solid;
 }
 
 
+
 footer{
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 footer p{
@@ -94,9 +96,15 @@ footer p{
     padding-top: 0.5em;
 }
 
-/*agregar aquí css de new-game*/
+
 
 /*style de new-word*/
+.warning{
+    color: #bc4a48;
+    font-size: small;
+    font-weight: bold;
+}
+
 input{
     display: block;
     margin: 0 auto;
@@ -109,7 +117,8 @@ input{
     outline: none;
 }
 
-#guardar-palabra{
+/*style btn1 & btn2 new-game/new-word*/
+.btn1{
     width: 20%;
     font-size: medium;
     text-align: center;
@@ -123,18 +132,18 @@ input{
     transition: background color border cursor;
 }
 
-#guardar-palabra:hover{
+.btn1:hover{
     background: #43254a;
     color: #fceba6;
     cursor: pointer;
 }
 
-#guardar-palabra:active{
+.btn1:active{
     background: #231427;
     border: #231427 solid;
 }
 
-#cancelar{
+.btn2{
     width: 20%;
     font-size: medium;
     padding: 1% 0;
@@ -146,12 +155,12 @@ input{
     transition: background border cursor;
 }
 
-#cancelar:hover{
+.btn2:hover{
     background: #f7b054;
     cursor: pointer;
 }
 
-#cancelar:active{
+.btn2:active{
     background: #ff9100;
     border: #ff9100 solid;
 }

@@ -7,26 +7,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script> 
+    
     <title>El ahorcado</title>
 </head>
-<body>
+<body onload="iniciarJuego();">
     <div class="container">
         <header>
             <img class="logo" src="complements/logoAlura.png" alt="Logo de Alura">
             <section class="text-logo">
                 <p>Alura - Oracle Next Education</p>
-                <h1>Encriptador de mensajes</h1>  
+                <h1>Juego del ahorcado</h1>  
                 <p>por Agustina Becerra</p>
             </section> 
         </header>
         <main>
-
+            <canvas class="canvas" width="940" height="310" id="canvas"></canvas>
+            <div class="botonera">
+                <button class="btn1" type="submit" id="nuevo-juego" onclick="iniciarJuego();">Nuevo juego</button>
+                <button class="btn2" type="submit" id="desistir" onclick="location.href = 'index.html'">Desistir</button>
+            </div>
         </main>
         <footer>
-            <p>Encriptador desarrollado por Agustina Becerra</p>
-            <p>Buenos Aires, Argentina - 2022</p>
+            <p>Desarrollado por Agustina Becerra - Todos los derechos reservados</p>
+            <p>Buenos Aires, Argentina - 2022</p>         
         </footer>
-    </div>    
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    </script>     
 </body>
 </html>
