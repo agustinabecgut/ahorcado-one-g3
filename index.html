@@ -7,8 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script> 
-    <title>Inicio</title>
+    <title>El Ahorcado</title>
 </head>
 <body>
     <div class="container">
@@ -20,14 +19,29 @@
                 <p>por Agustina Becerra</p>
             </section> 
         </header>
-        <main>
-            <button class="iniciar-juego" type="submit" id="iniciar-juego" onclick="location.href = 'new-game.html'">Iniciar juego</button>                
-            <button class="agregar-palabra" type="submit" id="agregar-palabra" onclick="location.href= 'new-word.html'">Agregar nueva palabra</button>
-        </main>
+        <div class="main-iniciar" id="main-iniciar">
+            <button class="iniciar-juego" type="submit" id="iniciar-juego" onclick="iniciarJuego()">Iniciar juego</button>                
+            <button class="agregar-palabra" type="submit" id="agregar-palabra">Agregar nueva palabra</button>
+        </div>
+        <div class="main-jugar" id="main-jugar">
+            <canvas class="canvas" width="940" height="310" id="canvas"></canvas>
+            <div class="botonera">
+                <button class="btn1" type="submit" id="nuevo-juego" onclick="iniciarJuego();">Nuevo juego</button>
+                <button class="btn2" type="submit" id="desistir">Desistir</button>
+            </div>
+        </div>
+        <div class="main-agregar" id="main-agregar">
+            <input class="nueva-palabra" type="text" id="nueva-palabra" value="Ingrese una palabra" onfocus="this.value=''">
+            <p class="warning">&#9888 Máximo de 8 letras</p>
+            <button class="btn1" type="submit" id="guardar-palabra" onclick="agregarPalabra();">Guardar y empezar</button>
+            <button class="btn2" type="submit" id="cancelar">Cancelar</button>
+        </div>
         <footer>
             <p>Desarrollado por Agustina Becerra - Todos los derechos reservados</p>
             <p>Buenos Aires, Argentina - 2022</p>
         </footer>
     </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="canvas.js"></script>
 </body>
 </html>
