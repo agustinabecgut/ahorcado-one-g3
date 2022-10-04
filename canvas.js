@@ -30,3 +30,24 @@ function subrayar() {
     tablero.stroke();
     tablero.closePath();
 }
+
+//Validaciones
+function escribirLetraCorrecta(index) {
+    tablero.font = 'bold 60px Monserrat';
+    tablero.lineWidth = 6;
+    tablero.lineCap = "round";
+    tablero.lineJoin = "round";
+    tablero.fillStyle = "#bc4a48";
+
+    let anchura = 940/palabraSecreta.length;
+    tablero.fillText(palabraSecreta[index], 55 + (anchura*index), 240);
+}
+
+function escribirLetraIncorrecta(letra, errorsLeft) {
+    tablero.font = 'bold 40px Monserrat';
+    tablero.lineWidth = 6;
+    tablero.lineCap = "round";
+    tablero.lineJoin = "round";
+    tablero.fillStyle = "#bc4a48";
+    tablero.fillText(letra, 100 + (40*(10-errorsLeft)), 300, 40); 
+}
