@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <title>El Ahorcado</title>
 </head>
-<body>
+<body onload="principal();">
     <div class="container">
         <header>
             <img class="logo" src="complements/logoAlura.png" alt="Logo de Alura">
@@ -19,23 +19,34 @@
                 <p>por Agustina Becerra</p>
             </section> 
         </header>
-        <div class="main-iniciar" id="main-iniciar">
-            <button class="iniciar-juego" type="submit" id="iniciar-juego" onclick="iniciarJuego()">Iniciar juego</button>                
-            <button class="agregar-palabra" type="submit" id="agregar-palabra">Agregar nueva palabra</button>
-        </div>
-        <div class="main-jugar" id="main-jugar">
-            <canvas class="canvas" width="940" height="310" id="canvas"></canvas>
-            <div class="botonera">
-                <button class="btn1" type="submit" id="nuevo-juego" onclick="iniciarJuego();">Nuevo juego</button>
-                <button class="btn2" type="submit" id="desistir">Desistir</button>
+        <main>
+            <div class="main-iniciar" id="main-iniciar">
+                <button class="iniciar-juego" type="submit" id="iniciar-juego" onclick="iniciarJuego()">Iniciar juego</button>                
+                <button class="agregar-palabra" type="submit" id="agregar-palabra" onclick="agregarPalabra()">Agregar nueva palabra</button>
             </div>
-        </div>
-        <div class="main-agregar" id="main-agregar">
-            <input class="nueva-palabra" type="text" id="nueva-palabra" value="Ingrese una palabra" onfocus="this.value=''">
-            <p class="warning">&#9888 Máximo de 8 letras</p>
-            <button class="btn1" type="submit" id="guardar-palabra" onclick="agregarPalabra();">Guardar y empezar</button>
-            <button class="btn2" type="submit" id="cancelar">Cancelar</button>
-        </div>
+            <div class="main-jugar" id="main-jugar">
+                <canvas class="canvas" width="940" height="310" id="canvas"></canvas>
+                <div class="mensaje-fin_del_juego">
+                    <h3>¡Juego finalizado!</h3>
+                    <p>Usaste todas tus chances :(</p>
+                    <p>Hacé click <button class="volver-menu" type="submit" id="volver-menu" onclick="principal()">acá</button> o recargá la página para volver al menú de inicio</p>
+                </div>
+                <div class="mensaje-ganador">
+                    <h3>Ganaste, ¡Felicidades!</h3>
+                    <p>Hacé click <button class="volver-menu" type="submit" id="volver-menu" onclick="principal()">acá</button> o recargá la página para volver al menú de inicio</p>
+                </div>
+                <div class="botonera">
+                    <button class="btn1" type="submit" id="nuevo-juego" onclick="iniciarJuego();">Nuevo juego</button>
+                    <button class="btn2" type="submit" id="desistir" onclick="principal();">Desistir</button>
+                </div>
+            </div>
+            <div class="main-agregar" id="main-agregar">
+                <input class="nueva-palabra" type="text" id="nueva-palabra" value="Ingrese una palabra" onfocus="this.value=''">
+                <p class="warning">&#9888 Máximo de 8 letras</p>
+                <button class="btn1" type="submit" id="guardar-palabra" onclick="guardarPalabra()">Guardar y empezar</button>
+                <button class="btn2" type="submit" id="cancelar" onclick="principal()">Cancelar</button>
+            </div>
+        </main>        
         <footer>
             <p>Desarrollado por Agustina Becerra - Todos los derechos reservados</p>
             <p>Buenos Aires, Argentina - 2022</p>
