@@ -151,6 +151,8 @@ function escribirLetraCorrecta(index) {
 
     let anchura = 940/palabraSecreta.length;
     tablero.fillText(palabraSecreta[index], 55 + (anchura*index), 240);
+
+    aciertos = aciertos + 1;
 }
 
 function escribirLetraIncorrecta(letra, errorsLeft) {

@@ -26,25 +26,26 @@
             </div>
             <div class="main-jugar" id="main-jugar">
                 <canvas class="canvas" width="940" height="310" id="canvas"></canvas>
-                <div class="mensaje-fin_del_juego">
-                    <h3>¡Juego finalizado!</h3>
-                    <p>Usaste todas tus chances :(</p>
-                    <p>Hacé click <button class="volver-menu" type="submit" id="volver-menu" onclick="principal()">acá</button> o recargá la página para volver al menú de inicio</p>
-                </div>
-                <div class="mensaje-ganador">
-                    <h3>Ganaste, ¡Felicidades!</h3>
-                    <p>Hacé click <button class="volver-menu" type="submit" id="volver-menu" onclick="principal()">acá</button> o recargá la página para volver al menú de inicio</p>
-                </div>
                 <div class="botonera">
                     <button class="btn1" type="submit" id="nuevo-juego" onclick="iniciarJuego();">Nuevo juego</button>
-                    <button class="btn2" type="submit" id="desistir" onclick="principal();">Desistir</button>
+                    <button class="btn2" type="submit" id="desistir" onclick="location.reload()">Desistir</button>
+                </div>
+                <div class="contenedor__boton" id="contenedor__boton">
+                    <button class="boton__ganador" id="boton__ganador" type="submit" onclick="location.reload()">
+                        <h3>Ganaste ¡FELICIDADES!</h3>
+                        <p>Podés hacer click acá o regargá la página para volver al menú principal</p>
+                    </button>
+                    <button class="boton__fin-del-juego" id="boton__fin-del-juego" type="submit" onclick="location.reload()">
+                        <h3>¡Fin del juego! Usaste todas tus posibilidades :(</h3>
+                        <p>Podés hacer click acá o regargá la página para volver al menú principal</p>
+                    </button>
                 </div>
             </div>
             <div class="main-agregar" id="main-agregar">
                 <input class="nueva-palabra" type="text" id="nueva-palabra" value="Ingrese una palabra" onfocus="this.value=''">
                 <p class="warning">&#9888 Máximo de 8 letras</p>
                 <button class="btn1" type="submit" id="guardar-palabra" onclick="guardarPalabra()">Guardar y empezar</button>
-                <button class="btn2" type="submit" id="cancelar" onclick="principal()">Cancelar</button>
+                <button class="btn2" type="submit" id="cancelar" onclick="location.reload()">Cancelar</button>
             </div>
         </main>        
         <footer>
